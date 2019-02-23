@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+	<title>PW03_MARILIA_MESSIAS</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<font color="red" face="Calibri" size="10px"><b>Contato</b></font>
+	<i><p>Seja benvindo, preencha o <b>formulário</b> abaixo para:</p></i>
+	<ul>
+		<li>Dúvidas</li>
+		<li>Sugestões</li>
+		<li>Críticas</li>
+		<li>Orçamentos</li>
+	</ul>
+	
+	<p>Caso queira ver nossos produtos, clique <a href="https://www.vestibularfatec.com.br/home/">aqui</a>.</p>
+
+	<form action="">
+		Nome:
+		<input type="text" id="nome" required size="70" title="Digite um nome."/><br/><br/>
+		Email:
+		<input type="email" id="email" required size="80" title="Digite um email válido."/><br/><br/>
+		Telefone:
+		<input type="text" id="telefone" required pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{3,4}$" size="40" title="Digite um telefone na estrutura Ex.: (11)1111-1111."/><br/><br/>
+		Assunto:
+		<select id="assunto">
+				<option>Duvidas</option>
+				<option>Sugestões</option>
+				<option>Críticas</option>
+				<option>Orçamentos</option>
+			</select><br/></br>
+		
+		Deseja receber uma cópia deste e-mail: 
+		<input type="radio" name="copyEmail" value="yes" checked> Sim
+		<input type="radio" name="copyEmail" value="no"> Não<br/></br>
+		Mensagem:
+		<textarea rows="4" cols="50"></textarea><br/><br/>
+		<button id="btn">Enviar</button>
+	</form>
+	
+</body>
+</html>

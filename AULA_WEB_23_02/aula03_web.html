@@ -1,0 +1,42 @@
+<html>
+	<header>
+		<title>Aula 03 Web</title>
+	</header>
+	<body>
+		<h3>Aula 03 WEB</h3>
+	<form action="">
+		Nome:
+		<input type="text" id="nome" size="50" required title="digite um telefone correto"/><br/><br/>
+		Email:
+		<input type="email" id="email" size="25" required title="digite um email correto"/><br/><br/>
+		Senha: 
+		<input type="password" id="senha" size="15" maxLength="15" required pattern="^.{6,10}$" title="Digite ao menos 6 caracteres"/><br/><br/>
+		Data de Nascimento:
+		<input type="date" id="idade" required title="digite uma idade"/><br/><br/>	
+		Selecione o seu gênero: </br>
+		<input type="radio" name="genero" value="feminino"> Feminino
+		<input type="radio" name="genero" value="masculino"> Masculino<br/></br>
+		<input type="checkbox" name="recMsg" value="mensagemRec"> Deseja receber mensagens?<br><br/>
+		Volume: <br/>
+		<input type="range" min="1" max="50" step="5"></br>
+		Mensagem:<br/>
+		<textarea rows="4" cols="50"></textarea><br/><br/>
+		
+		Unidades:
+		<select id="unidade">
+			<option>Fatec IG</option>
+			<option>Fatec IG</option>
+			<option>Fatec IG</option>
+			<option>Fatec IG</option>
+			<option>Fatec IG</option>
+		</select><br/></br>
+		Telefone:
+		<input type="text" id="telefone" required pattern="[0-9]{4,6}-[0-9] {3,4}$" title="digite um telefone correto"/><br/><br/>
+		<button id="b1">Enviar</button>
+	</form>
+	</body>
+</html>
+
+
+
+

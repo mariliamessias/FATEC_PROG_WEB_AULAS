@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+	<title>PW04_MARILIA_MESSIAS</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<font color="blue" face="Calibri" size="6px"><b>Formulário de Exemplo HTML5</b></font>
+	<p>Preencha os campos abaixo:</p>
+
+	<form action="">
+		Email:
+		<input type="email" id="email" required size="50" title="Digite um email válido." placeholder="Ex.: nome@provedor.com"/><br/><br/>
+		Data:
+		<input type="date" id="date" required title="Digite uma data."/><br/><br/>
+		Número:
+		<input type="number" id="numero" min="1" max="20" required title="Digite um número entre 1 e 20."/><br/><br/>
+		Cidade:
+		<input list="cidades" name="cidades" placeholder="Selecione uma cidade.">
+		<datalist id="cidades">
+		  <option value="Suzano">
+		  <option value="Poá">
+		  <option value="Ferraz">
+		  <option value="Itaquaquecetuba">
+		  <option value="Guararema">
+		</datalist>
+		<br/></br>
+
+		CEP:
+		<input type="text" id="telefone" pattern="[0-9]{5}-[0-9]{3}$" size="20" title="Digite um CEP na estrutura Ex.: 12345-123." placeholder="Ex.: 12345-123"/><br/><br/>
+	
+		<button id="btn">Enviar</button>
+	</form>
+	
+</body>
+</html>
